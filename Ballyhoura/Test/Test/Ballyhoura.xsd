@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ballyhoura" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Ballyhoura" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RegisterDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Mobile" type="xs:string" minOccurs="0" />
+              <xs:element name="MemberNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="CreditUnion" type="xs:string" minOccurs="0" />
+              <xs:element name="PrefLanguage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StartUpItems">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CreditUnions" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CreditUnion" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="name" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                          <xs:element name="address" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                          <xs:element name="telephone" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                          <xs:element name="email" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+                          <xs:element name="webaddress" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+                          <xs:element name="latlong" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="languages" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="language" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="name" type="xs:string" minOccurs="0" />
+                          <xs:element name="code" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OperationStatus">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LoginGetTokens">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LoginPassPhrase" type="xs:string" minOccurs="0" />
+              <xs:element name="LoginSessionToken" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LoginDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MemberNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="Pass1" type="xs:string" minOccurs="0" />
+              <xs:element name="PinToken" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LoginStatus">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="MemberDetails" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" minOccurs="0" />
+                    <xs:element name="logintoken" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Accounts" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Account" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                          <xs:element name="Balance" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                          <xs:element name="Transactions" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Transaction" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Date" type="xs:string" minOccurs="0" />
+                                      <xs:element name="Ref" type="xs:string" minOccurs="0" />
+                                      <xs:element name="Amt" type="xs:string" minOccurs="0" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

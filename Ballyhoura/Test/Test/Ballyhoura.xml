@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Ballyhoura>
+  <RegisterDetails>
+    <Name></Name>
+    <Mobile></Mobile>
+    <MemberNumber></MemberNumber>
+    <CreditUnion></CreditUnion>
+    <PrefLanguage></PrefLanguage>
+  </RegisterDetails>
+  <StartUpItems>
+    <CreditUnions>
+      <CreditUnion id="123">
+        <name>ABC Credit Union</name>
+        <address>123 the place, galway, co. galway, Ireland</address>
+        <telephone>091-12345</telephone>
+        <email>info@galwaycu.ie</email>
+        <webaddress>http://www.galwaycu.ie</webaddress>
+        <latlong>123, 123</latlong>
+      </CreditUnion>
+      <CreditUnion id="124">
+        <name>C EF Credit Union</name>
+        <address>456 the place, galway, co. galway, Ireland</address>
+        <telephone>091-12346</telephone>
+        <email>info@galway2cu.ie</email>
+        <webaddress>http://www.galway2cu.ie</webaddress>
+        <latlong>124, 124</latlong>
+      </CreditUnion>
+    </CreditUnions>
+    <languages>
+      <language>
+        <name>English</name>
+        <code>EN</code>
+      </language>
+    </languages>
+  </StartUpItems>
+  <OperationStatus>
+    <Status>Success or Failure</Status>
+  </OperationStatus>
+  <LoginGetTokens>
+    <LoginPassPhrase>Telephone or DOB</LoginPassPhrase>
+    <LoginSessionToken> guid </LoginSessionToken>
+  </LoginGetTokens>
+  <LoginDetails>
+    <MemberNumber></MemberNumber>
+    <Pass1>0150</Pass1>
+    <PinToken>guid</PinToken>
+  </LoginDetails>
+  <LoginStatus>
+    <Status>Success or Failure</Status>
+    If success
+    <MemberDetails>
+      <name></name>
+      <logintoken></logintoken>
+    </MemberDetails>
+    <Accounts>
+      <Account id="123456">
+        <Name>Share Account 1</Name>
+        <Balance>123.00</Balance>
+        <Transactions>
+          <Transaction>
+            <Date>01/01/2012</Date>
+            <Ref>Acct lodgement</Ref>
+            <Amt>10.00</Amt>
+          </Transaction>
+          <Transaction>
+            <Date>01/02/2012</Date>
+            <Ref>Acct withdrawl</Ref>
+            <Amt>-20.00</Amt>
+          </Transaction>
+          <Transaction>
+            <Date>01/03/2012</Date>
+            <Ref>Acct lodgement</Ref>
+            <Amt>120.00</Amt>
+          </Transaction>
+
+        </Transactions>
+      </Account>
+    </Accounts>
+  </LoginStatus>
+</Ballyhoura>
